@@ -1,6 +1,6 @@
 [app]
-title = Al Yusr Lab
-package.name = alyusrlab
+title = My App
+package.name = myapp
 package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
@@ -12,8 +12,6 @@ android.api = 33
 android.minapi = 21
 android.sdk = 23
 android.ndk = 25b
-android.entrypoint = org.kivy.android.PythonActivity
-android.presplash_color = #FFFFFF
 android.archs = arm64-v8a,armeabi-v7a
 
 [buildozer]
