@@ -1,5 +1,6 @@
 name: Build APK
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,9 +8,12 @@ jobs:
       image: kivy/buildozer
     steps:
       - uses: actions/checkout@v4
+
       - name: Build with Buildozer
         run: |
+          export FORCE_BUILDOZER_ROOT=1
           yes | buildozer android debug
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
