@@ -15,3 +15,4 @@ jobs:
         with:
           name: app-apk
           path: bin/*.apk
+  
